@@ -33,9 +33,17 @@ public class Gui extends JFrame {
         playerinfo.setText(controller.playerX.getPlayerName() + " is " + controller.playerX.getPlayerMark() +
                 " and " + controller.playerO.getPlayerName() + " is " + controller.playerO.getPlayerMark());
 
-        setUpButton();
+//        setUpButton();
 
-
+        gamePanel.add(button1);
+        gamePanel.add(button2);
+        gamePanel.add(button3);
+        gamePanel.add(button4);
+        gamePanel.add(button5);
+        gamePanel.add(button6);
+        gamePanel.add(button7);
+        gamePanel.add(button8);
+        gamePanel.add(button9);
         groundPanel.add(gamePanel, BorderLayout.CENTER);
         groundPanel.add(playerinfo, BorderLayout.NORTH);
         bottomPanel.add(newGameButton);
@@ -43,8 +51,59 @@ public class Gui extends JFrame {
         groundPanel.add(bottomPanel, BorderLayout.SOUTH);
         add(groundPanel);
 
-        button1.addActionListener(e -> {controller.placeMark(0,0);
+        button1.addActionListener(e -> {
+            controller.placeMark(0,0);
+            controller.checkWin();
+            updateBoard();
             button1.setEnabled(false);
+        });
+        button2.addActionListener(e -> {
+            controller.placeMark(0,1);
+            controller.checkWin();
+            updateBoard();
+            button2.setEnabled(false);
+        });
+        button3.addActionListener(e -> {
+            controller.placeMark(0,2);
+            controller.checkWin();
+            updateBoard();
+            button3.setEnabled(false);
+        });
+        button4.addActionListener(e -> {
+            controller.placeMark(1,0);
+            controller.checkWin();
+            updateBoard();
+            button4.setEnabled(false);
+        });
+        button5.addActionListener(e -> {
+            controller.placeMark(1,1);
+            controller.checkWin();
+            updateBoard();
+            button5.setEnabled(false);
+        });
+        button6.addActionListener(e -> {
+            controller.placeMark(1,2);
+            controller.checkWin();
+            updateBoard();
+            button6.setEnabled(false);
+        });
+        button7.addActionListener(e -> {
+            controller.placeMark(2,0);
+            controller.checkWin();
+            updateBoard();
+            button7.setEnabled(false);
+        });
+        button8.addActionListener(e -> {
+            controller.placeMark(2,1);
+            controller.checkWin();
+            updateBoard();
+            button8.setEnabled(false);
+        });
+        button9.addActionListener(e -> {
+            controller.placeMark(2,2);
+            controller.checkWin();
+            updateBoard();
+            button9.setEnabled(false);
         });
 
         setLocationRelativeTo(null);
@@ -54,12 +113,25 @@ public class Gui extends JFrame {
 
     }
 
-    public void setUpButton(){
-        for (int i = 0; i < listOfButton.size(); i++) {
-gamePanel.add(listOfButton.get(i));
-listOfButton.get(i).addActionListener(this) {
-});
-        }
+//    public void setUpButton(){
+//        for (int i = 0; i < listOfButton.size(); i++) {
+//gamePanel.add(listOfButton.get(i));
+//listOfButton.get(i).addActionListener(this) {
+//});
+//        }
+//    }
+
+    public void updateBoard(){
+
+        button1.setText(String.valueOf(controller.gameBoard[0][0]));
+        button2.setText(String.valueOf(controller.gameBoard[0][1]));
+        button3.setText(String.valueOf(controller.gameBoard[0][2]));
+        button4.setText(String.valueOf(controller.gameBoard[1][0]));
+        button5.setText(String.valueOf(controller.gameBoard[1][1]));
+        button6.setText(String.valueOf(controller.gameBoard[1][2]));
+        button7.setText(String.valueOf(controller.gameBoard[2][0]));
+        button8.setText(String.valueOf(controller.gameBoard[2][1]));
+        button9.setText(String.valueOf(controller.gameBoard[2][2]));
     }
 
     public static void main(String[] args) {
