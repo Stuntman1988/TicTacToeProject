@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-    </list>
-    <list id="f84dd894-e976-41e1-a7c9-7fe0d0a5a960" name="Changes by Rasmus" comment="" />
+    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Framework and some code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Framework" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670920530218</updated>
-      <workItem from="1670920531366" duration="6643000" />
+      <workItem from="1670920531366" duration="6954000" />
     </task>
     <task id="LOCAL−00001" summary="Initial">
       <created>1670920584460</created>
@@ -101,7 +92,19 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1670928217639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Framework and some code">
+      <created>1670933180129</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1670933180129</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Framework and some code">
+      <created>1670933187688</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1670933187688</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +126,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Framework and some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework and some code" />
   </component>
 </project>
