@@ -11,8 +11,10 @@ public class Gui extends JFrame {
     JPanel groundPanel = new JPanel(new BorderLayout());
     JPanel gamePanel = new JPanel(new GridLayout(3,3));
     JPanel bottomPanel = new JPanel(new GridLayout(1,2));
-    JLabel infoField = new JLabel();
-    JLabel playerinfo = new JLabel();
+    JPanel topPanel = new JPanel(new GridLayout(1,3));
+    JLabel gameInfo = new JLabel("<----- Turn");
+    JLabel playerXname = new JLabel();
+    JLabel playerOname = new JLabel();
     JButton newGameButton = new JButton("New game");
     JButton giveUpButton = new JButton("Give up!");
 
@@ -30,10 +32,10 @@ public class Gui extends JFrame {
     List<JButton> listOfButton = List.of(button1, button2, button3, button4,button5,button6,button7,button8,button9);
 
     Gui(){
-        playerinfo.setText(controller.playerX.getPlayerName() + " is " + controller.playerX.getPlayerMark() +
-                " and " + controller.playerO.getPlayerName() + " is " + controller.playerO.getPlayerMark());
-
-//        setUpButton();
+        playerOname.setText(controller.playerO.getPlayerName() + " " + controller.playerO.getPlayerMark());
+        playerXname.setText(controller.playerX.getPlayerName() + " " + controller.playerX.getPlayerMark());
+        gameInfo.setHorizontalAlignment(JLabel.CENTER);
+        playerOname.setHorizontalAlignment(JLabel.RIGHT);
 
         gamePanel.add(button1);
         gamePanel.add(button2);
@@ -44,8 +46,13 @@ public class Gui extends JFrame {
         gamePanel.add(button7);
         gamePanel.add(button8);
         gamePanel.add(button9);
+
+        topPanel.add(playerXname);
+        topPanel.add(gameInfo);
+        topPanel.add(playerOname);
+
         groundPanel.add(gamePanel, BorderLayout.CENTER);
-        groundPanel.add(playerinfo, BorderLayout.NORTH);
+        groundPanel.add(topPanel, BorderLayout.NORTH);
         bottomPanel.add(newGameButton);
         bottomPanel.add(giveUpButton);
         groundPanel.add(bottomPanel, BorderLayout.SOUTH);
@@ -53,55 +60,55 @@ public class Gui extends JFrame {
 
         button1.addActionListener(e -> {
             controller.placeMark(0,0);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button1.setEnabled(false);
         });
         button2.addActionListener(e -> {
             controller.placeMark(0,1);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button2.setEnabled(false);
         });
         button3.addActionListener(e -> {
             controller.placeMark(0,2);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button3.setEnabled(false);
         });
         button4.addActionListener(e -> {
             controller.placeMark(1,0);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button4.setEnabled(false);
         });
         button5.addActionListener(e -> {
             controller.placeMark(1,1);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button5.setEnabled(false);
         });
         button6.addActionListener(e -> {
             controller.placeMark(1,2);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button6.setEnabled(false);
         });
         button7.addActionListener(e -> {
             controller.placeMark(2,0);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button7.setEnabled(false);
         });
         button8.addActionListener(e -> {
             controller.placeMark(2,1);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button8.setEnabled(false);
         });
         button9.addActionListener(e -> {
             controller.placeMark(2,2);
-            controller.checkWin();
+            checkWinner();
             updateBoard();
             button9.setEnabled(false);
         });
@@ -132,6 +139,8 @@ public class Gui extends JFrame {
         button7.setText(String.valueOf(controller.gameBoard[2][0]));
         button8.setText(String.valueOf(controller.gameBoard[2][1]));
         button9.setText(String.valueOf(controller.gameBoard[2][2]));
+
+        nullCheck();
     }
 
     public static void main(String[] args) {

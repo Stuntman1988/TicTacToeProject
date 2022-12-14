@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Framework and some code">
+      <change afterPath="$PROJECT_DIR$/src/PlayerMarker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/GameRules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/GameRules.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
+    </list>
+    <list id="cd164a82-9212-4f27-97e1-1ff9f0ee984f" name="Changes by danielle" comment="" />
+    <list id="8379907b-247b-4f69-969f-4b92099f36c4" name="Changes by Rasmus" comment="">
       <change beforePath="$PROJECT_DIR$/src/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
+    <list id="190c1643-f0d2-40b1-89b1-2e1adeeb9b29" name="Changes by VERDE" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -32,6 +42,37 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/Gui.java">
+      <ranges>
+        <range start1="13" end1="15" start2="13" end2="17" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="18" end1="20" start2="20" end2="20" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+        <range start1="32" end1="36" start2="32" end2="36" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="46" end1="46" start2="46" end2="51" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="47" end1="48" start2="52" end2="53" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="55" end1="56" start2="60" end2="61" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="61" end1="62" start2="66" end2="67" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="67" end1="68" start2="72" end2="73" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="73" end1="74" start2="78" end2="79" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="79" end1="80" start2="84" end2="85" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="85" end1="86" start2="90" end2="91" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="91" end1="92" start2="96" end2="97" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="97" end1="98" start2="102" end2="103" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="103" end1="104" start2="108" end2="109" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="115" end1="123" start2="120" end2="120" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+        <range start1="134" end1="134" start2="131" end2="133" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="135" end1="135" start2="134" end2="175" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/GameController.java">
+      <ranges>
+        <range start1="7" end1="8" start2="7" end2="8" changelist="373b4801-99b9-4c79-9707-542d775540bc" />
+        <range start1="14" end1="16" start2="14" end2="16" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+        <range start1="17" end1="18" start2="17" end2="18" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+        <range start1="34" end1="36" start2="34" end2="36" changelist="8379907b-247b-4f69-969f-4b92099f36c4" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +97,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Gui">
+  <component name="RunManager" selected="Application.TicTacToe">
     <configuration name="Gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui" />
       <module name="TicTacToeProject" />
@@ -73,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Gui" />
         <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.Gui" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +153,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1670933187688</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Framework and some code">
+      <created>1670940036353</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1670940036353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

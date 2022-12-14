@@ -5,7 +5,7 @@ public class GameController {
     public Player playerX;
     public Player playerO;
     public Player currentPlayer;
-    public char[][] gameBoard;
+    public PlayerMarker[][] gameBoard;
     private GameRules gameRules;
 
     public GameController() {
