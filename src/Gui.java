@@ -18,8 +18,6 @@ public class Gui extends JFrame {
     JButton newGameButton = new JButton("New game");
     JButton giveUpButton = new JButton("Give up!");
 
-    JButton[] buttonArr = new JButton[9];
-
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
@@ -120,14 +118,6 @@ public class Gui extends JFrame {
 
     }
 
-//    public void setUpButton(){
-//        for (int i = 0; i < listOfButton.size(); i++) {
-//gamePanel.add(listOfButton.get(i));
-//listOfButton.get(i).addActionListener(this) {
-//});
-//        }
-//    }
-
     public void updateBoard(){
 
         button1.setText(String.valueOf(controller.gameBoard[0][0]));
@@ -141,6 +131,47 @@ public class Gui extends JFrame {
         button9.setText(String.valueOf(controller.gameBoard[2][2]));
 
         nullCheck();
+    }
+
+    public void checkWinner(){
+        String win = controller.checkWin();
+        if(win.equals("X Won!")){
+            gameInfo.setText("<----- WINNER!");
+            disableButtons();
+        }
+        else if(win.equals("O Won!")){
+            gameInfo.setText("WINNER! ----->");
+            disableButtons();
+        }else if(win.equals("Draw!")){
+            gameInfo.setText("DRAW!");
+            disableButtons();
+        }
+        else {
+            if(gameInfo.getText().equals("<----- Turn")){
+                gameInfo.setText("Turn ----->");
+            }
+            else gameInfo.setText("<----- Turn");
+        }
+    }
+
+    public void disableButtons(){
+        for(JButton button: listOfButton){
+            button.setEnabled(false);
+        }
+
+    }
+    public void enableButtons(){
+        for(JButton button: listOfButton){
+            button.setEnabled(true);
+        }
+    }
+
+    public void nullCheck(){
+        for (int i = 0; i < listOfButton.size(); i++) {
+            if (listOfButton.get(i).getText().equals("null")){
+                listOfButton.get(i).setText("");
+            }
+        }
     }
 
     public static void main(String[] args) {

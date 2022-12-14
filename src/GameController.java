@@ -12,10 +12,10 @@ public class GameController {
         String playerXName = JOptionPane.showInputDialog(null, "Player X name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
         String playerOName = JOptionPane.showInputDialog(null, "Player O name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
 
-        playerX = new Player(playerXName.trim(), 'X');
-        playerO = new Player(playerOName.trim(), 'O');
+        playerX = new Player(playerXName.trim(), PlayerMarker.X);
+        playerO = new Player(playerOName.trim(), PlayerMarker.O);
         currentPlayer = playerX;
-        gameBoard = new char[3][3];
+        gameBoard = new PlayerMarker[3][3];
         gameRules = new GameRules();
 
 
@@ -32,8 +32,8 @@ public class GameController {
 
     public String checkWin(){
         return switch (gameRules.isGameEnd(gameBoard, currentPlayer.getPlayerMark())) {
-            case 'X' -> "X Won!";
-            case 'O' -> "O Won!";
+            case 'X' -> "O Won!";
+            case 'O' -> "X Won!";
             case 'D' -> "Draw!";
             default -> "";
         };

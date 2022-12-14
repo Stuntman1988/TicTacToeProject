@@ -1,9 +1,9 @@
 public class Player {
 
     private String playerName;
-    private char playerMark;
+    private PlayerMarker playerMark;
 
-    public Player(String playerName, char playerMark) {
+    public Player(String playerName, PlayerMarker playerMark) {
         this.playerName = playerName;
         this.playerMark = playerMark;
     }
@@ -12,7 +12,7 @@ public class Player {
         return playerName;
     }
 
-    public char getPlayerMark() {
+    public PlayerMarker getPlayerMark() {
         return playerMark;
     }
 }
