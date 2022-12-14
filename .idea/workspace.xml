@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Game is working">
+    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Winning row is colored green">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
     </list>
     <list id="447223c8-82b2-4535-b036-833da5e594b9" name="Changes by Rasmus" comment="Changes by Rasmus" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Winning_row_gets_color" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +90,7 @@
       <updated>1670920530218</updated>
       <workItem from="1670920531366" duration="6954000" />
       <workItem from="1671032145075" duration="63000" />
-      <workItem from="1671046381086" duration="3008000" />
+      <workItem from="1671046381086" duration="6118000" />
     </task>
     <task id="LOCAL−00001" summary="Initial">
       <created>1670920584460</created>
@@ -138,7 +140,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1671027773607</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Winning row is colored green">
+      <created>1671049683317</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1671049683317</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,21 +171,7 @@
     <MESSAGE value="Framework and some code" />
     <MESSAGE value="Game is working" />
     <MESSAGE value="Changes by Rasmus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by Rasmus" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Gui.java</url>
-          <line>151</line>
-          <properties class="Gui" method="colorWinningRow">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Winning row is colored green" />
+    <option name="LAST_COMMIT_MESSAGE" value="Winning row is colored green" />
   </component>
 </project>

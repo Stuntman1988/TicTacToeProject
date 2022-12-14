@@ -111,6 +111,34 @@ public class Gui extends JFrame {
             button9.setEnabled(false);
         });
 
+        newGameButton.addActionListener(e -> {
+            for (JButton jb : listOfButton) {
+                jb.setText("");
+                jb.setBackground(null);
+                jb.setEnabled(true);
+                controller.newGame();
+                giveUpButton.setEnabled(true);
+                if (controller.currentPlayer.getPlayerMark().equals("X")){
+                    gameInfo.setText("Turn ----->");
+                    controller.currentPlayer = controller.playerO;
+                } else {
+                    gameInfo.setText("<----- Turn");
+                    controller.currentPlayer = controller.playerX;
+                }
+            }
+        });
+
+        giveUpButton.addActionListener(e -> {
+            String whoGiveUp = controller.giveUp();
+            giveUpButton.setEnabled(false);
+            if (whoGiveUp.equals("X")){
+                gameInfo.setText("WINNER! ----->");
+            }
+            else {
+                gameInfo.setText("<----- WINNER!");
+            }
+        });
+
         setLocationRelativeTo(null);
         setVisible(true);
         setSize(300, 300);
