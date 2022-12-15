@@ -128,7 +128,7 @@ public class Gui extends JFrame {
                 jb.setEnabled(true);
                 controller.newGame();
                 giveUpButton.setEnabled(true);
-                if (controller.currentPlayer.getPlayerMark().equals("X")){
+                if (controller.currentPlayer.getPlayerMark() == PlayerMarker.X){
                     gameInfo.setText("Turn ----->");
                     controller.currentPlayer = controller.playerO;
                 } else {

@@ -1,5 +1,4 @@
 public enum PlayerMarker {
     X,
-    O,
-    BLANK
+    O
 }

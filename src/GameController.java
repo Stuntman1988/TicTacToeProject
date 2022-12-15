@@ -48,11 +48,9 @@ public class GameController {
 
     public String giveUp(){
         if(currentPlayer == playerX){
-            currentPlayer = playerO;
             return "X";
         }else{
-            currentPlayer = playerX;
-            return "Y";
+            return "O";
         }
 
     }
