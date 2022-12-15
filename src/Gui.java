@@ -33,17 +33,12 @@ public class Gui extends JFrame {
         playerOname.setText(controller.playerO.getPlayerName() + " " + controller.playerO.getPlayerMark());
         playerXname.setText(controller.playerX.getPlayerName() + " " + controller.playerX.getPlayerMark());
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
+        gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
         playerOname.setHorizontalAlignment(JLabel.RIGHT);
 
-        button1.setFont(new Font("Tahoma", Font.BOLD,70));
-        button2.setFont(new Font("Tahoma", Font.BOLD,70));
-        button3.setFont(new Font("Tahoma", Font.BOLD,70));
-        button4.setFont(new Font("Tahoma", Font.BOLD,70));
-        button5.setFont(new Font("Tahoma", Font.BOLD,70));
-        button6.setFont(new Font("Tahoma", Font.BOLD,70));
-        button7.setFont(new Font("Tahoma", Font.BOLD,70));
-        button8.setFont(new Font("Tahoma", Font.BOLD,70));
-        button9.setFont(new Font("Tahoma", Font.BOLD,70));
+        for(JButton i: listOfButton) {
+            i.setFont(new Font("Tahoma", Font.BOLD,70));
+        }
 
         gamePanel.add(button1);
         gamePanel.add(button2);
@@ -172,61 +167,56 @@ public class Gui extends JFrame {
         if (win.equals("X Won!")) {
             gameInfo.setText("<----- WINNER!");
             colorWinningRow();
-            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
         } else if (win.equals("O Won!")) {
             gameInfo.setText("WINNER! ----->");
-            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
             colorWinningRow();
         } else if (win.equals("Draw!")) {
             gameInfo.setText("DRAW!");
-            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
         } else {
             if (gameInfo.getText().equals("<----- Turn")) {
                 gameInfo.setText("Turn ----->");
-                gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             } else gameInfo.setText("<----- Turn");
-            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
         }
     }
 
 
     public void colorWinningRow(){
-if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())){
-    button1.setBackground(Color.GREEN);
-    button2.setBackground(Color.GREEN);
-    button3.setBackground(Color.GREEN);
-} else if (button4.getText().equals(button5.getText()) && button4.getText().equals(button6.getText())) {
-    button4.setBackground(Color.GREEN);
-    button5.setBackground(Color.GREEN);
-    button6.setBackground(Color.GREEN);
-} else if (button7.getText().equals(button8.getText()) && button7.getText().equals(button9.getText())) {
-    button7.setBackground(Color.GREEN);
-    button8.setBackground(Color.GREEN);
-    button9.setBackground(Color.GREEN);
-} else if (button1.getText().equals(button4.getText()) && button1.getText().equals(button7.getText())) {
-    button1.setBackground(Color.GREEN);
-    button4.setBackground(Color.GREEN);
-    button7.setBackground(Color.GREEN);
-} else if (button2.getText().equals(button5.getText()) && button2.getText().equals(button8.getText())) {
-    button2.setBackground(Color.GREEN);
-    button5.setBackground(Color.GREEN);
-    button8.setBackground(Color.GREEN);
-} else if (button3.getText().equals(button6.getText()) && button3.getText().equals(button9.getText())) {
-    button3.setBackground(Color.GREEN);
-    button6.setBackground(Color.GREEN);
-    button9.setBackground(Color.GREEN);
-} else if (button1.getText().equals(button5.getText()) && button1.getText().equals(button9.getText())) {
-    button1.setBackground(Color.GREEN);
-    button5.setBackground(Color.GREEN);
-    button9.setBackground(Color.GREEN);
-} else if (button3.getText().equals(button5.getText()) && button3.getText().equals(button7.getText())) {
-    button3.setBackground(Color.GREEN);
-    button5.setBackground(Color.GREEN);
-    button7.setBackground(Color.GREEN);
-}
+        if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())){
+            button1.setBackground(Color.GREEN);
+            button2.setBackground(Color.GREEN);
+            button3.setBackground(Color.GREEN);
+        } else if (button4.getText().equals(button5.getText()) && button4.getText().equals(button6.getText())) {
+            button4.setBackground(Color.GREEN);
+            button5.setBackground(Color.GREEN);
+            button6.setBackground(Color.GREEN);
+        } else if (button7.getText().equals(button8.getText()) && button7.getText().equals(button9.getText())) {
+            button7.setBackground(Color.GREEN);
+            button8.setBackground(Color.GREEN);
+            button9.setBackground(Color.GREEN);
+        } else if (button1.getText().equals(button4.getText()) && button1.getText().equals(button7.getText())) {
+            button1.setBackground(Color.GREEN);
+            button4.setBackground(Color.GREEN);
+            button7.setBackground(Color.GREEN);
+        } else if (button2.getText().equals(button5.getText()) && button2.getText().equals(button8.getText())) {
+            button2.setBackground(Color.GREEN);
+            button5.setBackground(Color.GREEN);
+            button8.setBackground(Color.GREEN);
+        } else if (button3.getText().equals(button6.getText()) && button3.getText().equals(button9.getText())) {
+            button3.setBackground(Color.GREEN);
+            button6.setBackground(Color.GREEN);
+            button9.setBackground(Color.GREEN);
+        } else if (button1.getText().equals(button5.getText()) && button1.getText().equals(button9.getText())) {
+            button1.setBackground(Color.GREEN);
+            button5.setBackground(Color.GREEN);
+            button9.setBackground(Color.GREEN);
+        } else if (button3.getText().equals(button5.getText()) && button3.getText().equals(button7.getText())) {
+            button3.setBackground(Color.GREEN);
+            button5.setBackground(Color.GREEN);
+            button7.setBackground(Color.GREEN);
+        }
     }
 
     public void disableButtons() {

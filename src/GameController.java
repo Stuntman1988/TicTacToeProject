@@ -23,9 +23,9 @@ public class GameController {
         if (gameRules.isValidMove(x, y, gameBoard)) {
             gameBoard[x][y] = currentPlayer.getPlayerMark();
         }
-        if(currentPlayer == playerX){
+        if (currentPlayer == playerX){
             currentPlayer = playerO;
-        }else currentPlayer = playerX;
+        } else currentPlayer = playerX;
     }
 
     public String checkWin(){
@@ -42,7 +42,6 @@ public class GameController {
             for (int j = 0; j < 3; j++) {
                 gameBoard[i][j] = null;
             }
-
         }
     }
 
@@ -52,7 +51,5 @@ public class GameController {
         }else{
             return "O";
         }
-
     }
-
 }
