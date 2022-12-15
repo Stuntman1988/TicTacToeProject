@@ -1,6 +1,5 @@
 public class GameRules {
 
-
     public boolean isValidMove(int X, int Y, PlayerMarker[][] board) {
         return board[X][Y] != PlayerMarker.X && board[X][Y] != PlayerMarker.O;
     }
@@ -42,4 +41,4 @@ public class GameRules {
 /* (0,0) (0,1) (0,2)
    (1,0) (1,1) (1,2)
    (2,0) (2,1) (2,2)
- */
+*/

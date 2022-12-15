@@ -17,7 +17,6 @@ public class Gui extends JFrame {
     JLabel playerOname = new JLabel();
     JButton newGameButton = new JButton("New game");
     JButton giveUpButton = new JButton("Give up!");
-
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
@@ -28,36 +27,31 @@ public class Gui extends JFrame {
     JButton button8 = new JButton();
     JButton button9 = new JButton();
     List<JButton> listOfButton = List.of(button1, button2, button3, button4, button5, button6, button7, button8, button9);
+    Font fontInfo = new Font("Tahoma", Font.BOLD, 20);
+    Font fontButton = new Font("Tahoma", Font.BOLD, 70);
 
     Gui() {
-        playerOname.setText(controller.playerO.getPlayerMark() + " " + controller.playerO.getPlayerName());
-        playerXname.setText(controller.playerX.getPlayerName() + " " + controller.playerX.getPlayerMark());
+        playerOname.setText("( " + controller.playerO.getPlayerMark() + " ) " + controller.playerO.getPlayerName());
+        playerXname.setText(controller.playerX.getPlayerName() + " ( " + controller.playerX.getPlayerMark() + " )");
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
-        gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
+        gameInfo.setFont(fontInfo);
+        playerOname.setFont(fontInfo);
+        playerXname.setFont(fontInfo);
         playerOname.setHorizontalAlignment(JLabel.RIGHT);
 
-        for(JButton i: listOfButton) {
-            i.setFont(new Font("Tahoma", Font.BOLD,70));
+        for(JButton jp: listOfButton) {
+            jp.setFont(fontButton);
+            gamePanel.add(jp);
         }
-
-        gamePanel.add(button1);
-        gamePanel.add(button2);
-        gamePanel.add(button3);
-        gamePanel.add(button4);
-        gamePanel.add(button5);
-        gamePanel.add(button6);
-        gamePanel.add(button7);
-        gamePanel.add(button8);
-        gamePanel.add(button9);
 
         topPanel.add(playerXname);
         topPanel.add(gameInfo);
         topPanel.add(playerOname);
 
-        groundPanel.add(gamePanel, BorderLayout.CENTER);
-        groundPanel.add(topPanel, BorderLayout.NORTH);
         bottomPanel.add(newGameButton);
         bottomPanel.add(giveUpButton);
+        groundPanel.add(gamePanel, BorderLayout.CENTER);
+        groundPanel.add(topPanel, BorderLayout.NORTH);
         groundPanel.add(bottomPanel, BorderLayout.SOUTH);
         add(groundPanel);
 
@@ -147,7 +141,8 @@ public class Gui extends JFrame {
         setLocationRelativeTo(null);
         setTitle("Tic Tac Toe");
         setVisible(true);
-        setSize(400,400);
+        setSize(500,500);
+        setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
@@ -181,7 +176,6 @@ public class Gui extends JFrame {
             } else gameInfo.setText("<----- Turn");
         }
     }
-
 
     public void colorWinningRow(){
         if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())){
@@ -239,5 +233,4 @@ public class Gui extends JFrame {
             }
         }
     }
-
 }
