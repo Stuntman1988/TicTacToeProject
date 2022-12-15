@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Game is working">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-12-13_14_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-12-13_14_59__Changes_.xml" afterDir="false" />
+    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Winning row is colored green">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
     </list>
+    <list id="447223c8-82b2-4535-b036-833da5e594b9" name="Changes by Rasmus" comment="Changes by Rasmus" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Framework" />
+        <entry key="$PROJECT_DIR$" value="Winning_row_gets_color" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,6 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670920530218</updated>
       <workItem from="1670920531366" duration="6954000" />
+      <workItem from="1671032145075" duration="63000" />
+      <workItem from="1671046381086" duration="6118000" />
     </task>
     <task id="LOCAL−00001" summary="Initial">
       <created>1670920584460</created>
@@ -118,7 +124,31 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1670940036353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Game is working">
+      <created>1671024207177</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1671024207177</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Game is working">
+      <created>1671024426562</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1671024426562</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Changes by Rasmus">
+      <created>1671027773607</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1671027773607</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Winning row is colored green">
+      <created>1671049683317</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1671049683317</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +171,9 @@
     </ignored-roots>
     <MESSAGE value="Initial" />
     <MESSAGE value="Framework and some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework and some code" />
+    <MESSAGE value="Game is working" />
+    <MESSAGE value="Changes by Rasmus" />
+    <MESSAGE value="Winning row is colored green" />
+    <option name="LAST_COMMIT_MESSAGE" value="Winning row is colored green" />
   </component>
 </project>

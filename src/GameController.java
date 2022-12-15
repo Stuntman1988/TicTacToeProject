@@ -17,8 +17,6 @@ public class GameController {
         currentPlayer = playerX;
         gameBoard = new PlayerMarker[3][3];
         gameRules = new GameRules();
-
-
     }
 
     public void placeMark(int x, int y) {
@@ -37,6 +35,26 @@ public class GameController {
             case 'D' -> "Draw!";
             default -> "";
         };
+    }
+
+    public void newGame(){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                gameBoard[i][j] = null;
+            }
+
+        }
+    }
+
+    public String giveUp(){
+        if(currentPlayer == playerX){
+            currentPlayer = playerO;
+            return "X";
+        }else{
+            currentPlayer = playerX;
+            return "Y";
+        }
+
     }
 
 }
