@@ -73,6 +73,8 @@
       <list>
         <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.Gui" />
+        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.Gui" />
       </list>
     </recent_temporary>
   </component>
