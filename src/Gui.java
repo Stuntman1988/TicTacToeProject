@@ -35,6 +35,16 @@ public class Gui extends JFrame {
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
         playerOname.setHorizontalAlignment(JLabel.RIGHT);
 
+        button1.setFont(new Font("Tahoma", Font.BOLD,70));
+        button2.setFont(new Font("Tahoma", Font.BOLD,70));
+        button3.setFont(new Font("Tahoma", Font.BOLD,70));
+        button4.setFont(new Font("Tahoma", Font.BOLD,70));
+        button5.setFont(new Font("Tahoma", Font.BOLD,70));
+        button6.setFont(new Font("Tahoma", Font.BOLD,70));
+        button7.setFont(new Font("Tahoma", Font.BOLD,70));
+        button8.setFont(new Font("Tahoma", Font.BOLD,70));
+        button9.setFont(new Font("Tahoma", Font.BOLD,70));
+
         gamePanel.add(button1);
         gamePanel.add(button2);
         gamePanel.add(button3);
@@ -140,8 +150,9 @@ public class Gui extends JFrame {
         });
 
         setLocationRelativeTo(null);
+        setTitle("Tic Tac Toe");
         setVisible(true);
-        setSize(300, 300);
+        setSize(400,400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
@@ -161,20 +172,26 @@ public class Gui extends JFrame {
         if (win.equals("X Won!")) {
             gameInfo.setText("<----- WINNER!");
             colorWinningRow();
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
         } else if (win.equals("O Won!")) {
             gameInfo.setText("WINNER! ----->");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
             colorWinningRow();
         } else if (win.equals("Draw!")) {
             gameInfo.setText("DRAW!");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             disableButtons();
         } else {
             if (gameInfo.getText().equals("<----- Turn")) {
                 gameInfo.setText("Turn ----->");
+                gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
             } else gameInfo.setText("<----- Turn");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));
         }
     }
+
 
     public void colorWinningRow(){
 if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())){
