@@ -30,7 +30,7 @@ public class Gui extends JFrame {
     List<JButton> listOfButton = List.of(button1, button2, button3, button4, button5, button6, button7, button8, button9);
 
     Gui() {
-        playerOname.setText(controller.playerO.getPlayerName() + " " + controller.playerO.getPlayerMark());
+        playerOname.setText(controller.playerO.getPlayerMark() + " " + controller.playerO.getPlayerName());
         playerXname.setText(controller.playerX.getPlayerName() + " " + controller.playerX.getPlayerMark());
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
         gameInfo.setFont(new Font("Tahoma", Font.BOLD, 12));

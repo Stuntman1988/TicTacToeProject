@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/TicTacToe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
     </list>
     <list id="447223c8-82b2-4535-b036-833da5e594b9" name="Changes by Rasmus" comment="Changes by Rasmus" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +154,13 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1671106762106</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Cleanup">
+      <created>1671106914382</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1671106914382</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
