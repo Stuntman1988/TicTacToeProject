@@ -19,6 +19,7 @@ public class Gui extends JFrame {
     JButton giveUpButton = new JButton("Give up!");
 
     JButton button1 = new JButton();
+
     JButton button2 = new JButton();
     JButton button3 = new JButton();
     JButton button4 = new JButton();
@@ -34,6 +35,16 @@ public class Gui extends JFrame {
         playerXname.setText(controller.playerX.getPlayerName() + " " + controller.playerX.getPlayerMark());
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
         playerOname.setHorizontalAlignment(JLabel.RIGHT);
+
+        button1.setFont(new Font("Tahoma", Font.BOLD,70));
+        button2.setFont(new Font("Tahoma", Font.BOLD,70));
+        button3.setFont(new Font("Tahoma", Font.BOLD,70));
+        button4.setFont(new Font("Tahoma", Font.BOLD,70));
+        button5.setFont(new Font("Tahoma", Font.BOLD,70));
+        button6.setFont(new Font("Tahoma", Font.BOLD,70));
+        button7.setFont(new Font("Tahoma", Font.BOLD,70));
+        button8.setFont(new Font("Tahoma", Font.BOLD,70));
+        button9.setFont(new Font("Tahoma", Font.BOLD,70));
 
         gamePanel.add(button1);
         gamePanel.add(button2);
@@ -61,6 +72,7 @@ public class Gui extends JFrame {
             checkWinner();
             updateBoard();
             button1.setEnabled(false);
+
         });
         button2.addActionListener(e -> {
             controller.placeMark(0,1);
@@ -112,11 +124,13 @@ public class Gui extends JFrame {
         });
 
         setLocationRelativeTo(null);
+        setTitle("Tic Tac Toe");
         setVisible(true);
-        setSize(300,300);
+        setSize(400,400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
     }
+
 
     public void updateBoard(){
 
@@ -137,20 +151,25 @@ public class Gui extends JFrame {
         String win = controller.checkWin();
         if(win.equals("X Won!")){
             gameInfo.setText("<----- WINNER!");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD,12));
             disableButtons();
         }
         else if(win.equals("O Won!")){
             gameInfo.setText("WINNER! ----->");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD,12));
             disableButtons();
         }else if(win.equals("Draw!")){
             gameInfo.setText("DRAW!");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD,12));
             disableButtons();
         }
         else {
             if(gameInfo.getText().equals("<----- Turn")){
                 gameInfo.setText("Turn ----->");
+                gameInfo.setFont(new Font("Tahoma", Font.BOLD,12));
             }
             else gameInfo.setText("<----- Turn");
+            gameInfo.setFont(new Font("Tahoma", Font.BOLD,12));
         }
     }
 
