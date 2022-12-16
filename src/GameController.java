@@ -8,12 +8,9 @@ public class GameController {
     public PlayerMarker[][] gameBoard;
     private GameRules gameRules;
 
-    public GameController() {
-
-    }
+    public GameController() {}
 
     public void startGame(GameController controller){
-
         String playerXName = JOptionPane.showInputDialog(null, "Player X name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
         String playerOName = JOptionPane.showInputDialog(null, "Player O name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
 

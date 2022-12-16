@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Cleanup">
+    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Start gamecontroller from main.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/GameRules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/GameRules.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/TicTacToe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
     </list>
     <list id="447223c8-82b2-4535-b036-833da5e594b9" name="Changes by Rasmus" comment="Changes by Rasmus" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +107,7 @@
       <workItem from="1671032145075" duration="63000" />
       <workItem from="1671046381086" duration="6118000" />
       <workItem from="1671118095835" duration="999000" />
-      <workItem from="1671177340948" duration="1662000" />
+      <workItem from="1671177340948" duration="3029000" />
     </task>
     <task id="LOCAL−00001" summary="Initial">
       <created>1670920584460</created>
@@ -172,7 +175,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1671106914382</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Start gamecontroller from main.">
+      <created>1671179245993</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1671179245993</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +208,7 @@
     <MESSAGE value="Changes by Rasmus" />
     <MESSAGE value="Winning row is colored green" />
     <MESSAGE value="Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
+    <MESSAGE value="Start gamecontroller from main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Start gamecontroller from main." />
   </component>
 </project>
