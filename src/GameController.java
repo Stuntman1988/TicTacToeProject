@@ -9,6 +9,11 @@ public class GameController {
     private GameRules gameRules;
 
     public GameController() {
+
+    }
+
+    public void startGame(GameController controller){
+
         String playerXName = JOptionPane.showInputDialog(null, "Player X name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
         String playerOName = JOptionPane.showInputDialog(null, "Player O name:", "Tic Tac Toe", JOptionPane.QUESTION_MESSAGE);
 
@@ -17,6 +22,7 @@ public class GameController {
         currentPlayer = playerX;
         gameBoard = new PlayerMarker[3][3];
         gameRules = new GameRules();
+        new Gui(controller);
     }
 
     public void placeMark(int x, int y) {

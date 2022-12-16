@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Gui extends JFrame {
 
-    GameController controller = new GameController();
+    GameController controller;
     JPanel groundPanel = new JPanel(new BorderLayout());
     JPanel gamePanel = new JPanel(new GridLayout(3, 3));
     JPanel bottomPanel = new JPanel(new GridLayout(1, 2));
@@ -30,7 +30,8 @@ public class Gui extends JFrame {
     Font fontInfo = new Font("Tahoma", Font.BOLD, 20);
     Font fontButton = new Font("Tahoma", Font.BOLD, 70);
 
-    Gui() {
+    Gui(GameController controller) {
+        this.controller = controller;
         playerOname.setText("( " + controller.playerO.getPlayerMark() + " ) " + controller.playerO.getPlayerName());
         playerXname.setText(controller.playerX.getPlayerName() + " ( " + controller.playerX.getPlayerMark() + " )");
         gameInfo.setHorizontalAlignment(JLabel.CENTER);
@@ -39,7 +40,7 @@ public class Gui extends JFrame {
         playerXname.setFont(fontInfo);
         playerOname.setHorizontalAlignment(JLabel.RIGHT);
 
-        for(JButton jp: listOfButton) {
+        for (JButton jp : listOfButton) {
             jp.setFont(fontButton);
             gamePanel.add(jp);
         }
@@ -117,23 +118,23 @@ public class Gui extends JFrame {
                 jb.setEnabled(true);
                 controller.newGame();
                 giveUpButton.setEnabled(true);
-                if (controller.currentPlayer.getPlayerMark() == PlayerMarker.X){
-                    gameInfo.setText("Turn ----->");
-                    controller.currentPlayer = controller.playerO;
-                } else {
-                    gameInfo.setText("<----- Turn");
-                    controller.currentPlayer = controller.playerX;
-                }
             }
+            if (controller.currentPlayer.getPlayerMark() == PlayerMarker.X) {
+                gameInfo.setText("Turn ----->");
+                controller.currentPlayer = controller.playerO;
+            } else {
+                gameInfo.setText("<----- Turn");
+                controller.currentPlayer = controller.playerX;
+            }
+
         });
 
         giveUpButton.addActionListener(e -> {
             String whoGiveUp = controller.giveUp();
             giveUpButton.setEnabled(false);
-            if (whoGiveUp.equals("X")){
+            if (whoGiveUp.equals("X")) {
                 gameInfo.setText("WINNER! ----->");
-            }
-            else {
+            } else {
                 gameInfo.setText("<----- WINNER!");
             }
         });
@@ -141,7 +142,7 @@ public class Gui extends JFrame {
         setLocationRelativeTo(null);
         setTitle("Tic Tac Toe");
         setVisible(true);
-        setSize(500,500);
+        setSize(500, 500);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -161,14 +162,19 @@ public class Gui extends JFrame {
         String win = controller.checkWin();
         if (win.equals("X Won!")) {
             gameInfo.setText("<----- WINNER!");
+            controller.currentPlayer = controller.playerX;
             colorWinningRow();
+            giveUpButton.setEnabled(false);
             disableButtons();
         } else if (win.equals("O Won!")) {
             gameInfo.setText("WINNER! ----->");
-            disableButtons();
+            controller.currentPlayer = controller.playerO;
             colorWinningRow();
+            giveUpButton.setEnabled(false);
+            disableButtons();
         } else if (win.equals("Draw!")) {
             gameInfo.setText("DRAW!");
+            giveUpButton.setEnabled(false);
             disableButtons();
         } else {
             if (gameInfo.getText().equals("<----- Turn")) {
@@ -177,8 +183,8 @@ public class Gui extends JFrame {
         }
     }
 
-    public void colorWinningRow(){
-        if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())){
+    public void colorWinningRow() {
+        if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())) {
             button1.setBackground(Color.GREEN);
             button2.setBackground(Color.GREEN);
             button3.setBackground(Color.GREEN);
