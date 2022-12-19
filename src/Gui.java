@@ -184,35 +184,35 @@ public class Gui extends JFrame {
     }
 
     public void colorWinningRow() {
-        if (button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())) {
+        if (!button1.getText().equals("") && button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())) {
             button1.setBackground(Color.GREEN);
             button2.setBackground(Color.GREEN);
             button3.setBackground(Color.GREEN);
-        } else if (button4.getText().equals(button5.getText()) && button4.getText().equals(button6.getText())) {
+        } else if (!button4.getText().equals("") && button4.getText().equals(button5.getText()) && button4.getText().equals(button6.getText())) {
             button4.setBackground(Color.GREEN);
             button5.setBackground(Color.GREEN);
             button6.setBackground(Color.GREEN);
-        } else if (button7.getText().equals(button8.getText()) && button7.getText().equals(button9.getText())) {
+        } else if (!button7.getText().equals("") && button7.getText().equals(button8.getText()) && button7.getText().equals(button9.getText())) {
             button7.setBackground(Color.GREEN);
             button8.setBackground(Color.GREEN);
             button9.setBackground(Color.GREEN);
-        } else if (button1.getText().equals(button4.getText()) && button1.getText().equals(button7.getText())) {
+        } else if (!button1.getText().equals("") && button1.getText().equals(button4.getText()) && button1.getText().equals(button7.getText())) {
             button1.setBackground(Color.GREEN);
             button4.setBackground(Color.GREEN);
             button7.setBackground(Color.GREEN);
-        } else if (button2.getText().equals(button5.getText()) && button2.getText().equals(button8.getText())) {
+        } else if (!button2.getText().equals("") && button2.getText().equals(button5.getText()) && button2.getText().equals(button8.getText())) {
             button2.setBackground(Color.GREEN);
             button5.setBackground(Color.GREEN);
             button8.setBackground(Color.GREEN);
-        } else if (button3.getText().equals(button6.getText()) && button3.getText().equals(button9.getText())) {
+        } else if (!button3.getText().equals("") && button3.getText().equals(button6.getText()) && button3.getText().equals(button9.getText())) {
             button3.setBackground(Color.GREEN);
             button6.setBackground(Color.GREEN);
             button9.setBackground(Color.GREEN);
-        } else if (button1.getText().equals(button5.getText()) && button1.getText().equals(button9.getText())) {
+        } else if (!button1.getText().equals("") && button1.getText().equals(button5.getText()) && button1.getText().equals(button9.getText())) {
             button1.setBackground(Color.GREEN);
             button5.setBackground(Color.GREEN);
             button9.setBackground(Color.GREEN);
-        } else if (button3.getText().equals(button5.getText()) && button3.getText().equals(button7.getText())) {
+        } else if (!button3.getText().equals("") && button3.getText().equals(button5.getText()) && button3.getText().equals(button7.getText())) {
             button3.setBackground(Color.GREEN);
             button5.setBackground(Color.GREEN);
             button7.setBackground(Color.GREEN);
