@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Gui extends JFrame {
 
-    GameController controller;
+    private GameController controller;
     JPanel groundPanel = new JPanel(new BorderLayout());
     JPanel gamePanel = new JPanel(new GridLayout(3, 3));
     JPanel bottomPanel = new JPanel(new GridLayout(1, 2));
@@ -147,7 +147,7 @@ public class Gui extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
-    public void updateBoard() {
+    private void updateBoard() {
         int counter = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -158,7 +158,7 @@ public class Gui extends JFrame {
         nullCheck();
     }
 
-    public void checkWinner() {
+    private void checkWinner() {
         String win = controller.checkWin();
         if (win.equals("X Won!")) {
             gameInfo.setText("<----- WINNER!");
@@ -183,7 +183,7 @@ public class Gui extends JFrame {
         }
     }
 
-    public void colorWinningRow() {
+    private void colorWinningRow() {
         if (!button1.getText().equals("") && button1.getText().equals(button2.getText()) && button1.getText().equals(button3.getText())) {
             button1.setBackground(Color.GREEN);
             button2.setBackground(Color.GREEN);
@@ -219,20 +219,13 @@ public class Gui extends JFrame {
         }
     }
 
-    public void disableButtons() {
+    private void disableButtons() {
         for (JButton button : listOfButton) {
             button.setEnabled(false);
         }
-
     }
 
-    public void enableButtons() {
-        for (JButton button : listOfButton) {
-            button.setEnabled(true);
-        }
-    }
-
-    public void nullCheck() {
+    private void nullCheck() {
         for (int i = 0; i < listOfButton.size(); i++) {
             if (listOfButton.get(i).getText().equals("null")) {
                 listOfButton.get(i).setText("");
