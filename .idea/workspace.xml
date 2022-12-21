@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Bug fix">
+    <list default="true" id="373b4801-99b9-4c79-9707-542d775540bc" name="Changes" comment="Fix public and private methods">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-12-13_14_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-12-13_14_59__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToeProject/Gui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
     </list>
     <list id="447223c8-82b2-4535-b036-833da5e594b9" name="Changes by Rasmus" comment="Changes by Rasmus" />
@@ -34,6 +35,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3335d733-207e-4fb1-9699-0055cb7f18bd" />
+        <option name="url" value="https://github.com/Stuntman1988/TicTacToeProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -49,7 +63,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Robin/IntelliJ-workspaces/TicTacToeProjectExtend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Robin/IntelliJ-workspaces/temp/TicTacToeProjectVG&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -106,7 +120,10 @@
       <workItem from="1671118095835" duration="999000" />
       <workItem from="1671177340948" duration="3029000" />
       <workItem from="1671391686832" duration="21000" />
-      <workItem from="1671439833342" duration="1453000" />
+      <workItem from="1671439833342" duration="3376000" />
+      <workItem from="1671480842690" duration="317000" />
+      <workItem from="1671488800599" duration="8000" />
+      <workItem from="1671612360697" duration="336000" />
     </task>
     <task id="LOCAL−00001" summary="Initial">
       <created>1670920584460</created>
@@ -192,7 +209,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1671439901754</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Fix public and private methods">
+      <created>1671442156135</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1671442156135</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +245,7 @@
     <MESSAGE value="Start gamecontroller from main." />
     <MESSAGE value="Update game" />
     <MESSAGE value="Bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
+    <MESSAGE value="Fix public and private methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix public and private methods" />
   </component>
 </project>

@@ -132,6 +132,7 @@ public class Gui extends JFrame {
         giveUpButton.addActionListener(e -> {
             String whoGiveUp = controller.giveUp();
             giveUpButton.setEnabled(false);
+            disableButtons();
             if (whoGiveUp.equals("X")) {
                 gameInfo.setText("WINNER! ----->");
             } else {
